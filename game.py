@@ -1,4 +1,5 @@
 # game.py
+# Игра в Крестики Нолики
 
 from gameparts import Board
 from gameparts.exceptions import CellOccupiedError, FieldIndexError
