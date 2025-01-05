@@ -7,9 +7,8 @@ from gameparts.exceptions import CellOccupiedError, FieldIndexError
 
 def save_result(new_line):
     print(new_line)
-    file = open('result.txt', 'a')
-    file.write(new_line)
-    file.close() 
+    with open('result.txt', 'a') as file:
+        file.write(new_line)
 
 
 def main():
